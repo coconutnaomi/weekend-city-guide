@@ -1,97 +1,19 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>周末漫游 · 城市探索指南</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#0d0f14;color:#16171c;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-header{background:linear-gradient(135deg,#FF5F45 0%,#6C5CE7 55%,#0fa694 100%);color:#fff;padding:72px 0 88px;position:relative;overflow:hidden}
-header:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.18),transparent 55%)}
-header .wrap{position:relative;z-index:1}
-.badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:99px;font-size:13px;letter-spacing:.5px;margin-bottom:22px}
-h1{font-size:46px;line-height:1.15;letter-spacing:-1px;margin-bottom:16px}
-.sub{font-size:18px;opacity:.92;max-width:620px;line-height:1.7}
-.metaline{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap}
-.metaline span{background:rgba(255,255,255,.14);padding:7px 13px;border-radius:8px;font-size:13.5px}
-main{background:#f8f5f1;padding:56px 0 72px;min-height:40vh}
-h2{font-size:15px;letter-spacing:2px;color:#98a0ae;font-weight:600;margin:0 0 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:16px;margin-bottom:48px}
-.card{background:#fff;border-radius:16px;padding:22px;border:1px solid #e9e6e1;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-.card .ic{font-size:26px;margin-bottom:12px;display:block}
-.card h3{font-size:16.5px;margin-bottom:8px}
-.card p{font-size:13.8px;line-height:1.72;color:#6b7280}
-.pain{background:#fff;border-radius:16px;padding:8px 24px;border:1px solid #e9e6e1;margin-bottom:48px}
-.pain div{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f1efec;align-items:flex-start}
-.pain div:last-child{border:0}
-.pain b{font-size:14.5px;min-width:186px;color:#16171c}
-.pain span{font-size:13.8px;color:#6b7280;line-height:1.7}
-.pain i{color:#0fa694;font-style:normal;font-weight:600}
-.flow{background:#16171c;color:#fff;border-radius:16px;padding:30px 26px;margin-bottom:48px}
-.flow h3{font-size:17px;margin-bottom:6px}
-.flow>p{font-size:13.5px;color:#98a0ae;margin-bottom:22px;line-height:1.7}
-.steps{display:flex;gap:10px;flex-wrap:wrap}
-.step{flex:1;min-width:132px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:15px}
-.step em{font-style:normal;font-size:11px;color:#FF5F45;font-weight:700;letter-spacing:1px}
-.step b{display:block;font-size:14.5px;margin:7px 0 5px}
-.step span{font-size:12.3px;color:#98a0ae;line-height:1.6}
-.note{background:#fff8ec;border:1px solid #f6dfae;border-radius:14px;padding:20px 22px}
-.note b{font-size:14.5px;display:block;margin-bottom:8px}
-.note p{font-size:13.6px;color:#8a6d3b;line-height:1.75}
-footer{background:#0d0f14;color:#6b7280;font-size:12.8px;padding:26px 0;text-align:center}
-@media(max-width:640px){h1{font-size:32px}header{padding:52px 0 62px}.pain b{min-width:auto}.pain div{flex-direction:column;gap:5px}}
-</style>
-</head>
-<body>
-<header><div class="wrap">
-<div class="badge">AI Coding 产品设计 · 大学生周末场景</div>
-<h1>周末漫游<br>你的城市探索指南</h1>
-<p class="sub">展览、市集、演出、短途徒步散落在七八个 App 里，而真正决定你去不去的，是天气、预算和有没有人一起。周末漫游把这三件事放进同一个决策流程。</p>
-<div class="metaline"><span>📍 上海（多城市可切换）</span><span>🌦 天气联动推荐</span><span>💰 人均预算透明</span><span>👥 组队出发</span><span>📮 打卡与攻略闭环</span></div>
-</div></header>
-
-<main><div class="wrap">
-
-<h2>核 心 功 能</h2>
-<div class="grid">
-<div class="card"><span class="ic">🧭</span><h3>一键配周末</h3><p>回答五个问题（几个人、人均预算、偏好类型、出发地、有多少时间），生成 2–3 套完整周末路线，含时间轴、交通接驳与花费明细，而不是给你一堆孤立的活动。</p></div>
-<div class="card"><span class="ic">🌦</span><h3>天气驱动的 Plan B</h3><p>每个活动都有「雨天友好度」。周六有雨时，户外项目自动降权，并为每套方案预置一个可一键切换的室内备选，不用临时在群里重新讨论。</p></div>
-<div class="card"><span class="ic">💰</span><h3>学生预算透明</h3><p>卡片直接标人均区间与学生票政策，方案层面拆出门票、交通、吃饭三项合计，避免「到了才发现超预算」。</p></div>
-<div class="card"><span class="ic">👥</span><h3>组队出发</h3><p>浏览队伍大厅或自己发起，显示队长信誉与同校标签。队内用投票替代「你们定吧」，并按人数自动重算 AA 人均。</p></div>
-<div class="card"><span class="ic">📮</span><h3>打卡与足迹</h3><p>到场打卡生成分享卡片，沉淀为个人城市足迹地图与徽章成就，让周末出行变成可累积的事。</p></div>
-<div class="card"><span class="ic">📖</span><h3>结构化攻略</h3><p>攻略带人均、耗时、最佳时间、避坑提示等固定字段，可被一键复用为自己的行程——形成推荐到复用的闭环。</p></div>
-</div>
-
-<h2>痛 点 与 对 策</h2>
-<div class="pain">
-<div><b>信息分散在七八个平台</b><span>大麦看演出、小红书看市集、公众号看展览。<i>→ 按「周末可去」这一个意图聚合，统一字段可比较。</i></span></div>
-<div><b>选项多但不知道适合不适合我们</b><span>不清楚预算、人数、通勤是否匹配。<i>→ 规则化打分并展示匹配理由，推荐可解释。</i></span></div>
-<div><b>一下雨全盘作废</b><span>周六下雨，户外计划临时崩。<i>→ 天气进入排序权重，每套方案自带 Plan B。</i></span></div>
-<div><b>想去但没人陪 / 群里决策拉锯</b><span>「你们定吧」循环三小时。<i>→ 队伍大厅 + 队内投票 + 自动 AA 结算。</i></span></div>
-<div><b>去完就忘，没有沉淀</b><span>下次依然从零开始搜。<i>→ 打卡沉淀足迹，攻略可被复用为行程。</i></span></div>
-</div>
-
-<div class="flow">
-<h3>产品闭环</h3>
-<p>五个环节互为输入，用户产生的打卡与攻略数据会回流到推荐，形成越用越准的循环。</p>
-<div class="steps">
-<div class="step"><em>01</em><b>发现</b><span>天气 × 偏好 × 预算排序的活动流</span></div>
-<div class="step"><em>02</em><b>规划</b><span>生成整套周末路线与备选</span></div>
-<div class="step"><em>03</em><b>组队</b><span>找到同行的人，分摊成本</span></div>
-<div class="step"><em>04</em><b>打卡</b><span>记录足迹与真实花费</span></div>
-<div class="step"><em>05</em><b>攻略</b><span>沉淀经验，回流推荐</span></div>
-</div>
-</div>
-
-<div class="note">
-<b>关于本页</b>
-<p>这是首个上线版本。可交互的完整原型（活动流、配周末问卷、组队大厅、足迹地图、攻略社区与产品设计文档）正在此域名下持续迭代更新，链接地址保持不变，刷新即可看到最新版本。</p>
-</div>
-
-</div></main>
-<footer>周末漫游 · Weekend City Guide　|　持续迭代中</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta
+      name="description"
+      content="周末漫游 · 为大学生设计的周末城市探索指南。按偏好、天气、预算推荐本地活动，支持组队出发、打卡记录与攻略分享。"
+    />
+    <title>周末漫游 · 城市探索指南</title>
+    <script type="module" crossorigin src="/weekend-city-guide/assets/index-DOfK5zgs.js"></script>
+    <link rel="stylesheet" crossorigin href="/weekend-city-guide/assets/index-PlR24c9U.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
